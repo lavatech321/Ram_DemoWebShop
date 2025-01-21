@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Demo_Web_Shop_Automation_Testing" class="navigator-link">
-              <span class="suite-name border-passed">Demo Web Shop Automation Testing</span>
+              <span class="suite-name border-failed">Demo Web Shop Automation Testing</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Demo_Web_Shop_Automation_Testing" class="navigator-link ">
-                    <span>testng.xml</span>
+                    <span>C:\Users\ysoni\Desktop\DemoWebShop_selenium_automation\demowebshop.testautomation\src\test\resources\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Demo_Web_Shop_Automation_Testing" class="hide-methods failed suite-Demo_Web_Shop_Automation_Testing"> (hide)</a> <!-- hide-methods failed suite-Demo_Web_Shop_Automation_Testing -->
+                      <a href="#" panel-name="suite-Demo_Web_Shop_Automation_Testing" class="show-methods failed suite-Demo_Web_Shop_Automation_Testing"> (show)</a> <!-- show-methods failed suite-Demo_Web_Shop_Automation_Testing -->
+                    </span>
+                    <div class="method-list-content failed suite-Demo_Web_Shop_Automation_Testing">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demo_Web_Shop_Automation_Testing" title="TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Place order&quot;, &quot;DemoWebShop functionality testing&quot;)">runScenario("Place order", "DemoWebShop functionality testing")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demo_Web_Shop_Automation_Testing" title="TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Account registration&quot;, &quot;DemoWebShop functionality testing&quot;)">runScenario("Account registration", "DemoWebShop functionality testing")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Demo_Web_Shop_Automation_Testing -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,16 +120,6 @@
                       <a href="#" panel-name="suite-Demo_Web_Shop_Automation_Testing" class="show-methods passed suite-Demo_Web_Shop_Automation_Testing"> (show)</a> <!-- show-methods passed suite-Demo_Web_Shop_Automation_Testing -->
                     </span>
                     <div class="method-list-content passed suite-Demo_Web_Shop_Automation_Testing">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Demo_Web_Shop_Automation_Testing" title="TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Place order&quot;, &quot;DemoWebShop functionality testing&quot;)">runScenario("Place order", "DemoWebShop functionality testing")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Demo_Web_Shop_Automation_Testing" title="TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Account registration&quot;, &quot;DemoWebShop functionality testing&quot;)">runScenario("Account registration", "DemoWebShop functionality testing")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Demo_Web_Shop_Automation_Testing" title="TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Add gift card to cart&quot;, &quot;DemoWebShop functionality testing&quot;)">runScenario("Add gift card to cart", "DemoWebShop functionality testing")</a> <!-- method navigator-link -->
@@ -133,9 +142,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Demo_Web_Shop_Automation_Testing" class="panel Demo_Web_Shop_Automation_Testing">
-          <div class="suite-Demo_Web_Shop_Automation_Testing-class-passed">
+          <div class="suite-Demo_Web_Shop_Automation_Testing-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">TestRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -145,6 +154,28 @@
                   </a> <!-- runScenario("Place order", "DemoWebShop functionality testing") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Place order","DemoWebShop functionality testing")</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=132.0.6834.84)
+Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ab79419ca4e011049ecfcb420e54bd23, sendKeysToElement {id=f.DA17DB13614BB95C2101CE77B67B7A4E.d.0E659CA33DC33323C18FFFAD4260F678.e.367, value=[Ljava.lang.CharSequence;@7bef452c}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.84, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: C:\Users\ysoni\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63337}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63337/devtoo..., se:cdpVersion: 132.0.6834.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ab79419ca4e011049ecfcb420e54bd23)] -&gt; id: BillingNewAddress_Company]
+Session ID: ab79419ca4e011049ecfcb420e54bd23
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at com.demowebshop.testautomation.PlaceOrder.user_enters_billing_company_country_city_address_zip_code_phno(PlaceOrder.java:37)
+	at ✽.user enters billing company, country, city, address, zip code, phno(classpath:Features/demowebshop.feature:33)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -155,10 +186,42 @@
                   </a> <!-- runScenario("Account registration", "DemoWebShop functionality testing") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Account registration","DemoWebShop functionality testing")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//body[1]/div[4]/div[1]/div[4]/div[2]/div[1]/div[2]/div[2]/input[1]&quot;}
+  (Session info: chrome=132.0.6834.84)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ab79419ca4e011049ecfcb420e54bd23, findElement {using=xpath, value=//body[1]/div[4]/div[1]/div[4]/div[2]/div[1]/div[2]/div[2]/input[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.84, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: C:\Users\ysoni\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63337}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63337/devtoo..., se:cdpVersion: 132.0.6834.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ab79419ca4e011049ecfcb420e54bd23
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.demowebshop.testautomation.RegisterStep.user_is_navigated_to_account_created_successfully_page(RegisterStep.java:69)
+	at ✽.user is navigated to account created successfully page(classpath:Features/demowebshop.feature:7)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Demo_Web_Shop_Automation_Testing-class-failed -->
+          <div class="suite-Demo_Web_Shop_Automation_Testing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="runScenario(&quot;Add gift card to cart&quot;, &quot;DemoWebShop functionality testing&quot;)">
@@ -184,7 +247,7 @@
         </div> <!-- panel Demo_Web_Shop_Automation_Testing -->
         <div panel-name="test-xml-Demo_Web_Shop_Automation_Testing" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/home/yogita/selenium_projects/demowebshop.testautomation/src/test/resources/testng.xml</span>
+            <span class="header-content">C:\Users\ysoni\Desktop\DemoWebShop_selenium_automation\demowebshop.testautomation\src\test\resources\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -245,19 +308,19 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'TestRunner')
-data.setCell(0, 3, 39732);
+data.setCell(0, 3, 24590);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'TestRunner')
-data.setCell(1, 3, 29185);
+data.setCell(1, 3, 19920);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'TestRunner')
-data.setCell(2, 3, 17111);
+data.setCell(2, 3, 12778);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'TestRunner')
-data.setCell(3, 3, 11629);
+data.setCell(3, 3, 8452);
 window.suiteTableData['Demo_Web_Shop_Automation_Testing']= { tableData: data, tableDiv: 'times-div-Demo_Web_Shop_Automation_Testing'}
 return data;
 }
@@ -290,28 +353,32 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@2bcec6a6)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@61f3fbb8)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Account registration", "DemoWebShop functionality testing")</span>
-                <span class="method-start">244 ms</span>
+                <span class="method-start">417 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Account login successfully", "DemoWebShop functionality testing")</span>
-                <span class="method-start">29435 ms</span>
+                <span class="method-start">25048 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Add gift card to cart", "DemoWebShop functionality testing")</span>
-                <span class="method-start">41067 ms</span>
+                <span class="method-start">37828 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Place order", "DemoWebShop functionality testing")</span>
-                <span class="method-start">58180 ms</span>
+                <span class="method-start">57750 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">97913 ms</span>
+                <span class="method-start">66206 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
